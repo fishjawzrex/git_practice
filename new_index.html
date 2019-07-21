@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <style>
+  .head_div {
+    /*padding-left: 150px;*/
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
   .container{
     display: flex;
     flex-wrap: wrap;
@@ -11,15 +17,23 @@
     border: 4px black solid;
     /*align-items: baseline;*/
   }
+  /*.container{
+    display: grid;
+    grid-area: repeat(auto-fit, minmax(200px, 1fr);
+  }*/
   .container #red{
     background: red;
+    margin: 29px;
   }
   .container #blue{
     background: blue;
+
+    flex-shrink: 3;
   }
   .container #yellow{
     background: yellow;
     flex-grow: 3;
+    align-self: center;
   }
   .container #green{
     background: green;
@@ -27,6 +41,7 @@
   .container #orange{
     background: orange;
     height: auto;
+    margin: 29px;
   }
   .sub-div {
     height: 20%;
@@ -43,12 +58,15 @@
     </head>
   <body style="background-color: dodgerblue;">
     <header>
-      <nav>
-        <a href=#>Home</a>
-        <a href=#>Products</a>
-        <a href=#>Contact Us</a>
-        <a href=#>About</a>
-      </nav>
+      <div class="head_div">
+        <nav>
+          <a href=#>Home</a>
+          <a href=#>Products</a>
+          <a href=#>Contact Us</a>
+          <a href=#>About</a>
+        </nav>
+      </div>
+
     </header>
     <main>
       <div class="container">
